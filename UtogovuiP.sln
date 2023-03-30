@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtogovuiP", "UtogovuiP\UtogovuiP.csproj", "{76F17D0D-218F-488B-A961-609E9A91016E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76F17D0D-218F-488B-A961-609E9A91016E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F17D0D-218F-488B-A961-609E9A91016E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F17D0D-218F-488B-A961-609E9A91016E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F17D0D-218F-488B-A961-609E9A91016E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5354F29B-F6D9-4EF8-98DC-776B8CF50BFD}
+	EndGlobalSection
+EndGlobal

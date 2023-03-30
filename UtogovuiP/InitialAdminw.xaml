@@ -1,0 +1,52 @@
+﻿<Window x:Class="UtogovuiP.InitialAdminw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UtogovuiP"
+        mc:Ignorable="d"
+        Title="InitialAdminw" Height="450" Width="800">
+    <Grid >
+
+        <TabControl Margin="0,143,10,0">
+            <TabItem x:Name="registr" Header="Зарегистриравать" Margin="79,0,-76,-3" Height="22" VerticalAlignment="Bottom">
+                <StackPanel Margin="0,0,-1,0" Height="408">
+                    <DataGrid x:Name="GridR" Height="141" Width="421" SelectionChanged="GridR_SelectionChanged"/>
+                    <TextBox x:Name="Login" Text="Логин" TextWrapping="Wrap" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <PasswordBox x:Name="Password" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="Role" TextWrapping="Wrap" Text="Роль" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <Button x:Name="Creat" Content="Добавить" Height="23" Width="224" HorizontalAlignment="Center" Click="Creat_Click"/>
+                    <Button x:Name="Сhange" Content="Поменять" Height="23" Width="224" HorizontalAlignment="Center" Click="Сhange_Click"/>
+                    <Button x:Name="Delete" Content="Удалить" Height="23" Width="224" Click="Delete_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Сотрудники" Margin="-111,3,106,-3">
+                <StackPanel>
+                    <DataGrid x:Name="GridE" Height="140" Width="421" HorizontalAlignment="Left" SelectionChanged="GridE_SelectionChanged"/>
+                    <ComboBox x:Name="IdP" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="FIO" TextWrapping="Wrap" Text="Имя" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="Salary" TextWrapping="Wrap" Text="Зарплата" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <Button x:Name="C" Content="Добавить" Height="23" Width="224" HorizontalAlignment="Center" Click="C_Click"/>
+                    <Button x:Name="U" Content="Поменять" Height="23" Width="224" HorizontalAlignment="Center" Click="U_Click"/>
+                    <Button x:Name="D" Content="Удалить" Height="23" Width="224" HorizontalAlignment="Center" Click="D_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Склад" Margin="0,0,-22,0">
+                <StackPanel>
+                    <DataGrid x:Name="GridW" Height="140" Width="423" HorizontalAlignment="Left"/>
+                    <ComboBox x:Name="IdE" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <ComboBox x:Name="IdF" Width="224" Height="23" HorizontalAlignment="Center"/>
+                    <Button x:Name="creat" Content="Добавить" Height="23" Width="224" HorizontalAlignment="Center" Click="creat_Click_1"/>
+                    <Button x:Name="uptad" Content="Поменять" Height="23" Width="224" HorizontalAlignment="Center" Click="uptad_Click"/>
+                    <Button x:Name="delete" Content="Удалить" Height="23" Width="224" HorizontalAlignment="Center" Click="delete_Click_1"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="Pokypku" Content="Касса" HorizontalAlignment="Left" Margin="56,28,0,0" VerticalAlignment="Top" Width="122" Height="35" Click="Pokypku_Click" RenderTransformOrigin="0.422,-0.85"/>
+        <Button x:Name="Owner" Content="Владелец" HorizontalAlignment="Left" Margin="231,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.353,-0.36" Height="35" Width="122" Click="Owner_Click"/>
+        <Button x:Name="food" Content="Еда" HorizontalAlignment="Left" Margin="56,86,0,0" VerticalAlignment="Top" Width="122" Height="35" Click="food_Click" RenderTransformOrigin="0.422,-0.85"/>
+        <Button x:Name="Pet" Content="Питомец" HorizontalAlignment="Left" Margin="231,86,0,0" VerticalAlignment="Top" Width="122" Height="36" RenderTransformOrigin="0.422,-0.85" Click="Pet_Click"/>
+        <Button x:Name="Breed" Content="Породы" HorizontalAlignment="Left" Margin="395,28,0,0" VerticalAlignment="Top" Width="122" Height="36" Click="Breed_Click" RenderTransformOrigin="0.422,-0.85"/>
+    </Grid>
+
+</Window>
